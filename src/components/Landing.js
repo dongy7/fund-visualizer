@@ -5,12 +5,13 @@ import {
   Hero,
   HorizontalSplit,
   Navbar,
+  NavItem,
   Page,
   Section
 } from "neal-react"
 
 
-const brandName = "426 App"
+const brandName = "Fund Visualizer"
 const brand = <span>{brandName}</span>
 
 class Landing extends Component {
@@ -26,8 +27,8 @@ class Landing extends Component {
           </Navbar>
           <Hero
             backgroundImage="https://static.pexels.com/photos/21014/pexels-photo.jpg"
-            className="text-center">
-            <h1 className="display-1"> Google Maps Fundraiser App </h1>
+            className="text-xs-center">
+            <h1 className="display-4"> Google Maps Fundraiser App </h1>
             <p> A Visual Fundtracking App </p>
             <p>
               <a onClick={this.showLock.bind(this)} className="btn btn-white">
@@ -39,7 +40,7 @@ class Landing extends Component {
           <Section>
             <HorizontalSplit padding="md">
               <div>
-                <p className="lead">Responsive</p>
+                <p className="lead">Technologies</p>
                 <p className="text-justify">
                   This app is built using the UI library <a href="https://facebook.github.io/react/" target="_blank">React</a>, 
                   and Facebook's <a href="https://facebook.github.io/flux/" target="_blank">Flux architecture</a>. Our app also follows the design principles of 
@@ -48,23 +49,23 @@ class Landing extends Component {
                 </p>
               </div>
               <div>
-                <p className="lead">Welcome</p>
+                <p className="lead">Purpose</p>
                   <p className="text-justify">
-				  We believe that a fundraiser is a journey and should feel like one. See your movements towards your goal on an interactive Google Map and
+				  A fundraiser is a journey and should feel like one. See your movements towards your goal on an interactive Google Map and
 				  get the feeling of making the journey together with your friends and family. Much better than an Excel spreadsheet!
                   </p>
               </div>
               <div>
-                <p className="lead">About Us</p>
+                <p className="lead">About</p>
                 <p className="text-justify">
-                  This web application was created in collaboration with Dong Yeop Lee, Peter Jeong, Justin Baldwin, and Elliot Chen for their final project in COMP 426.
+                  This application was created by Dong Yeop Lee for the COMP 426 course at UNC Chapel Hill.
                 </p>
               </div>
             </HorizontalSplit>
           </Section>
 
           <Footer brandName={brandName}
-            githubUrl="https://github.com/dongy7/426">
+            githubUrl="https://github.com/dongy7">
           </Footer>
         </Page>
       </App>
