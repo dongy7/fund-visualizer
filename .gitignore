@@ -1,5 +1,4 @@
 node_modules/
 *.log
 *.tern-port
-dist/
 .DS_Store

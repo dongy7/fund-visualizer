@@ -58,14 +58,14 @@ class Landing extends Component {
               <div>
                 <p className="lead">About</p>
                 <p className="text-justify">
-                  This application was created by Dong Yeop Lee for the COMP 426 course at UNC Chapel Hill.
+                  This application was created by <a href="https://github.com/dongy7/" target="_blank">Dong Yeop Lee</a>.
                 </p>
               </div>
             </HorizontalSplit>
           </Section>
 
           <Footer brandName={brandName}
-            githubUrl="https://github.com/dongy7">
+            githubUrl="https://github.com/dongy7/fund-visualizer">
           </Footer>
         </Page>
       </App>
